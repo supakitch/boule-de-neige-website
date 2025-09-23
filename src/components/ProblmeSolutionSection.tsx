@@ -23,8 +23,9 @@ export const ProblmeSolutionSection = () => {
             Le problème, on le connaît par cœur
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Trop de boîtes galèrent avec leur prospection. Elles perdent du temps, de l'énergie, 
-            et au final... pas assez de leads qualifiés.
+            La plupart des entreprises peinent à générer des rendez-vous qualifiés. 
+            Entre ciblage imprécis, séquences qui s’essoufflent et manque de coordination multicanale, elles gaspillent du temps et de l’énergie… 
+            sans obtenir les résultats attendus.
           </p>
         </div>
 
