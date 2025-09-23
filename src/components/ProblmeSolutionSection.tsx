@@ -3,14 +3,14 @@ import { CheckCircle, XCircle, ArrowRight } from "lucide-react";
 export const ProblmeSolutionSection = () => {
   const problemes = [
     "Ciblage flou qui fait perdre du temps",
-    "Campagnes qui plafonnent après quelques semaines", 
+    "Du cold basé uniquement sur email/LinkedIn, sans signaux d’affaires ni inbound", 
     "Manque de cadence multicanale coordonnée",
     "Cycles de vente qui s'éternisent"
   ];
 
   const solutions = [
     "ICP ultra-précis et personas détaillés",
-    "Séquences multicanales (email, LinkedIn, WhatsApp, calls)",
+    "Séquences multicanales intégrant signaux d’affaires et inbound (email, LinkedIn, WhatsApp, calls, Ads…)",
     "Coaching équipe commerciale et automatisation",
     "Reporting en temps réel et optimisation continue"
   ];
