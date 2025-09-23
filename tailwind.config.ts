@@ -38,6 +38,8 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          orange: "hsl(var(--accent-orange))",
+          pink: "hsl(var(--accent-pink))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -46,6 +48,7 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          secondary: "hsl(var(--card-secondary))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -57,6 +60,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        jost: ['Jost', 'sans-serif'],
+        faustina: ['Faustina', 'serif'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-accent': 'var(--gradient-accent)',
+        'gradient-hero': 'var(--gradient-hero)',
       },
       borderRadius: {
         lg: "var(--radius)",
