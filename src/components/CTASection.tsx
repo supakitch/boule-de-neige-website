@@ -12,6 +12,7 @@ export const CTASection = () => {
               src={huskyTongue} 
               alt="Mascotte Husky joyeuse tirant la langue - prête à démarrer votre stratégie d'outreach" 
               className="w-32 h-32 mx-auto mb-8 animate-bounce"
+              style={{ animationDuration: '2s' }}
               width="128"
               height="128"
               loading="lazy"
