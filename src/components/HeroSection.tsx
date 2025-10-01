@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export const HeroSection = () => {
   const [glowPosition, setGlowPosition] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -40,11 +41,14 @@ export const HeroSection = () => {
                 className="text-lg px-8 py-6" 
                 aria-label="Planifier un audit gratuit de 15 minutes"
                 onMouseMove={handleMouseMove}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               >
                 <span 
-                  className="absolute inset-0 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                  className="absolute inset-0 rounded-full transition-opacity duration-300 pointer-events-none"
                   style={{
-                    background: `radial-gradient(circle 100px at ${glowPosition.x}px ${glowPosition.y}px, rgba(255, 255, 255, 0.3), transparent)`,
+                    background: `radial-gradient(circle 120px at ${glowPosition.x}px ${glowPosition.y}px, rgba(255, 255, 255, 0.4), transparent)`,
+                    opacity: isHovered ? 1 : 0,
                   }}
                 />
                 <span className="relative z-10">Planifier un audit gratuit</span>
