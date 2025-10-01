@@ -30,15 +30,15 @@ export const PhilosophieSection = () => {
               
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div className="bg-card p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-accent-orange mb-1 break-words">Formation</div>
+                  <div className="text-xl md:text-2xl font-bold text-accent-orange mb-1 whitespace-nowrap">Formation</div>
                   <div className="text-sm text-muted-foreground">Transmission des méthodes</div>
                 </div>
                 <div className="bg-card p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-accent-pink mb-1 break-words">Accompagnement</div>
+                  <div className="text-xl md:text-2xl font-bold text-accent-pink mb-1 whitespace-nowrap">Accompagnement</div>
                   <div className="text-sm text-muted-foreground">Coaching personnalisé</div>
                 </div>
                 <div className="bg-card p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-accent-orange mb-1 break-words">Autonomie</div>
+                  <div className="text-xl md:text-2xl font-bold text-accent-orange mb-1 whitespace-nowrap">Autonomie</div>
                   <div className="text-sm text-muted-foreground">Indépendance totale</div>
                 </div>
               </div>
