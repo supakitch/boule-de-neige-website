@@ -10,7 +10,7 @@ export const ProblmeSolutionSection = () => {
 
   const solutions = [
     "ICP ultra-précis et personas détaillés",
-    "Séquences multicanales intégrant signaux d’affaires et inbound (email, LinkedIn, WhatsApp, calls, Ads…)",
+    "Séquences multicanales intégrant signaux d’affaires (email, LinkedIn, WhatsApp, calls, Ads…)",
     "Coaching équipe commerciale et automatisation",
     "Reporting en temps réel et optimisation continue"
   ];
