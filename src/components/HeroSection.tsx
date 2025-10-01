@@ -4,14 +4,14 @@ import huskyWink from "@/assets/husky-wink.png";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero pt-20 pb-16" aria-labelledby="hero-title">
+    <section className="relative min-h-[calc(100vh-5rem)] bg-gradient-hero pt-20 pb-8 md:pb-12 lg:pb-16" aria-labelledby="hero-title">
       <a href="#services" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-4 focus:bg-card focus:rounded">
         Aller au contenu principal
       </a>
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Contenu principal */}
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             <div className="space-y-4">
               <h1 id="hero-title" className="text-4xl md:text-6xl font-bold text-primary leading-tight">
                 On remplit ton agenda plus vite qu'une descente de piste noire{" "}
@@ -45,7 +45,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Preuve sociale */}
-            <div className="space-y-4 pt-8">
+            <div className="space-y-4 pt-4 md:pt-6 lg:pt-8">
               <div className="flex items-center gap-4 flex-wrap">
                 <div className="bg-card-secondary p-3 rounded-lg">
                   <Users className="w-6 h-6 text-accent-pink" />
