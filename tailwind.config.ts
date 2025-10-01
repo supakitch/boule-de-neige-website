@@ -69,6 +69,7 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-accent': 'var(--gradient-accent)',
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
       },
       borderRadius: {
         lg: "var(--radius)",

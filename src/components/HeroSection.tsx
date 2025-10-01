@@ -1,18 +1,20 @@
+import React, { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, Users, TrendingUp } from "lucide-react";
 import huskyWink from "@/assets/husky-wink.png";
-import { useState } from "react";
 
 export const HeroSection = () => {
-  const [glowPosition, setGlowPosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setGlowPosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      buttonRef.current.style.setProperty('--mouse-x', `${x}px`);
+      buttonRef.current.style.setProperty('--mouse-y', `${y}px`);
+    }
   };
 
   return <section className="relative bg-gradient-hero py-20" aria-labelledby="hero-title">
@@ -36,6 +38,7 @@ export const HeroSection = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
+                ref={buttonRef}
                 variant="airbnb" 
                 size="lg" 
                 className="text-lg px-8 py-6" 
@@ -43,11 +46,15 @@ export const HeroSection = () => {
                 onMouseMove={handleMouseMove}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                style={{
+                  ['--mouse-x' as string]: '0px',
+                  ['--mouse-y' as string]: '0px',
+                }}
               >
                 <span 
                   className="absolute inset-0 rounded-full transition-opacity duration-300 pointer-events-none"
                   style={{
-                    background: `radial-gradient(circle 120px at ${glowPosition.x}px ${glowPosition.y}px, rgba(255, 255, 255, 0.4), transparent)`,
+                    background: `radial-gradient(circle 150px at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.35), transparent 70%)`,
                     opacity: isHovered ? 1 : 0,
                   }}
                 />
