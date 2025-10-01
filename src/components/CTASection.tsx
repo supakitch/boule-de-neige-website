@@ -1,8 +1,21 @@
+import React, { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MessageCircle } from "lucide-react";
 import huskyTongue from "@/assets/husky-tongue.png";
 
 export const CTASection = () => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) * 100) / buttonRef.current.clientWidth;
+      const y = ((e.clientY - rect.top) * 100) / buttonRef.current.clientHeight;
+      buttonRef.current.style.setProperty('--mouse-x', x.toString());
+      buttonRef.current.style.setProperty('--mouse-y', y.toString());
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-hero" aria-labelledby="cta-title">
       <div className="container mx-auto px-4">
@@ -30,10 +43,17 @@ export const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <Button 
-              variant="hero" 
+              ref={buttonRef}
+              variant="airbnb" 
               size="lg" 
-              className="text-lg px-10 py-6"
+              className="text-lg px-10 py-6 font-['Jost']"
               aria-label="Planifier un audit gratuit de 15 minutes avec notre équipe"
+              onMouseMove={handleMouseMove}
+              style={{
+                ['--mouse-x' as string]: '50',
+                ['--mouse-y' as string]: '50',
+                backgroundPosition: 'calc((100 - var(--mouse-x, 50)) * 1%) calc((100 - var(--mouse-y, 50)) * 1%)',
+              }}
             >
               <Calendar className="mr-2 w-6 h-6" aria-hidden="true" />
               Planifier un audit gratuit
