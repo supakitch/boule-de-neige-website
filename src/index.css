@@ -125,8 +125,12 @@ All colors MUST be HSL. Brand colors: #FFF6EB, #311C39, #FFE3F2, #E86D2A, #FF93C
     @apply bg-background text-foreground font-jost;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h4, h5, h6 {
     @apply font-faustina;
+  }
+  
+  h3 {
+    @apply font-jost;
   }
   
   /* Animations personnalisées */
