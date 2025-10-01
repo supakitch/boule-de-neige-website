@@ -46,7 +46,7 @@ export const MethodeSection = () => {
             <div key={index} className="relative">
               {/* Ligne de connexion */}
               {index < etapes.length - 1 && (
-                <div className="absolute left-8 top-20 w-0.5 h-16 bg-gradient-accent opacity-30"></div>
+                <div className="absolute left-8 top-16 w-0.5 h-8 bg-gradient-accent opacity-30"></div>
               )}
               
               <div className="flex items-center gap-6 mb-8">
