@@ -8,7 +8,7 @@ export const HeroSection = () => {
       <a href="#services" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-4 focus:bg-card focus:rounded">
         Aller au contenu principal
       </a>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Contenu principal */}
           <div className="space-y-8">
@@ -45,7 +45,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Preuve sociale */}
-            <div className="space-y-4 pt-8">
+            <div className="space-y-4">
               <div className="flex items-center gap-4 flex-wrap">
                 <div className="bg-card-secondary p-3 rounded-lg">
                   <Users className="w-6 h-6 text-accent-pink" />
