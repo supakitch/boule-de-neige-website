@@ -64,7 +64,7 @@ export const ServicesSection = () => {
                 <div className={`w-16 h-16 ${service.color} mb-6 group-hover:animate-shake`} aria-hidden="true">
                   <IconComponent className="w-full h-full" />
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-3">
+                <h3 className="text-xl font-bold font-jost text-primary mb-3">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
