@@ -1,7 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, Users, TrendingUp } from "lucide-react";
 import huskyWink from "@/assets/husky-wink.png";
+import { useState } from "react";
+
 export const HeroSection = () => {
+  const [glowPosition, setGlowPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setGlowPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
   return <section className="relative bg-gradient-hero py-20" aria-labelledby="hero-title">
       <a href="#services" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-4 focus:bg-card focus:rounded">
         Aller au contenu principal
@@ -22,9 +34,21 @@ export const HeroSection = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6" aria-label="Planifier un audit gratuit de 15 minutes">
-                Planifier un audit gratuit
-                <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
+              <Button 
+                variant="airbnb" 
+                size="lg" 
+                className="text-lg px-8 py-6" 
+                aria-label="Planifier un audit gratuit de 15 minutes"
+                onMouseMove={handleMouseMove}
+              >
+                <span 
+                  className="absolute inset-0 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                  style={{
+                    background: `radial-gradient(circle 100px at ${glowPosition.x}px ${glowPosition.y}px, rgba(255, 255, 255, 0.3), transparent)`,
+                  }}
+                />
+                <span className="relative z-10">Planifier un audit gratuit</span>
+                <ArrowRight className="relative z-10 ml-2 w-5 h-5" aria-hidden="true" />
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6" aria-label="Découvrir toutes nos offres d'outreach B2B">
                 Découvrir nos offres

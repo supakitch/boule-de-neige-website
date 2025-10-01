@@ -16,6 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-accent text-white hover:scale-105 hover:shadow-xl transition-all duration-300 font-semibold",
+        airbnb: "relative overflow-hidden bg-gradient-to-r from-[#E86D2A] to-[#FF93CF] text-white font-bold rounded-full shadow-lg transition-shadow duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
