@@ -10,10 +10,10 @@ export const HeroSection = () => {
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      buttonRef.current.style.setProperty('--mouse-x', `${x}px`);
-      buttonRef.current.style.setProperty('--mouse-y', `${y}px`);
+      const x = ((e.clientX - rect.left) * 100) / buttonRef.current.clientWidth;
+      const y = ((e.clientY - rect.top) * 100) / buttonRef.current.clientHeight;
+      buttonRef.current.style.setProperty('--mouse-x', x.toString());
+      buttonRef.current.style.setProperty('--mouse-y', y.toString());
     }
   };
 
@@ -41,25 +41,17 @@ export const HeroSection = () => {
                 ref={buttonRef}
                 variant="airbnb" 
                 size="lg" 
-                className="text-lg px-8 py-6" 
+                className="text-lg px-8 py-6 font-['Jost']" 
                 aria-label="Planifier un audit gratuit de 15 minutes"
                 onMouseMove={handleMouseMove}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
                 style={{
-                  ['--mouse-x' as string]: '0px',
-                  ['--mouse-y' as string]: '0px',
+                  ['--mouse-x' as string]: '50',
+                  ['--mouse-y' as string]: '50',
+                  backgroundPosition: 'calc((100 - var(--mouse-x, 50)) * 1%) calc((100 - var(--mouse-y, 50)) * 1%)',
                 }}
               >
-                <span 
-                  className="absolute inset-0 rounded-full transition-opacity duration-300 pointer-events-none"
-                  style={{
-                    background: `radial-gradient(circle 150px at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.35), transparent 70%)`,
-                    opacity: isHovered ? 1 : 0,
-                  }}
-                />
-                <span className="relative z-10">Planifier un audit gratuit</span>
-                <ArrowRight className="relative z-10 ml-2 w-5 h-5" aria-hidden="true" />
+                Planifier un audit gratuit
+                <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6" aria-label="Découvrir toutes nos offres d'outreach B2B">
                 Découvrir nos offres
