@@ -42,7 +42,7 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-muted" aria-labelledby="services-title">
+    <section id="services" className="py-20" style={{ backgroundColor: '#ffece8' }} aria-labelledby="services-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 id="services-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
