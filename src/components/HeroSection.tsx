@@ -45,7 +45,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Preuve sociale */}
-            <div className="space-y-4 pt-8">
+            <div className="space-y-4 pt-12">
               <div className="flex items-center gap-4 flex-wrap">
                 <div className="bg-card-secondary p-3 rounded-lg">
                   <Users className="w-6 h-6 text-accent-pink" />
