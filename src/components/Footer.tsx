@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-16">
+    <footer className="bg-primary text-primary-foreground py-16" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
@@ -55,10 +55,12 @@ export const Footer = () => {
             </p>
             <div className="flex gap-2">
               <Input 
+                type="email"
                 placeholder="Ton email" 
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
+                aria-label="Adresse email pour la newsletter"
               />
-              <Button variant="secondary" size="sm">
+              <Button variant="secondary" size="sm" aria-label="S'inscrire à la newsletter Piste Verte">
                 S'inscrire
               </Button>
             </div>
@@ -72,14 +74,16 @@ export const Footer = () => {
               © 2025 Boule2neige. Tous droits réservés.
             </div>
             
-            <div className="flex space-x-6 text-sm text-primary-foreground/60">
-              <a href="#" className="hover:text-primary-foreground transition-colors">Mentions légales</a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">RGPD</a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">CGV</a>
-            </div>
+            <nav className="flex space-x-6 text-sm text-primary-foreground/60" aria-label="Liens légaux">
+              <a href="#mentions-legales" className="hover:text-primary-foreground transition-colors">Mentions légales</a>
+              <a href="#rgpd" className="hover:text-primary-foreground transition-colors">RGPD</a>
+              <a href="#cgv" className="hover:text-primary-foreground transition-colors">CGV</a>
+            </nav>
             
             <div className="flex space-x-4">
-              <Linkedin className="w-5 h-5 text-primary-foreground/60 hover:text-primary-foreground transition-colors cursor-pointer" />
+              <a href="https://linkedin.com/company/boule2neige" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur LinkedIn">
+                <Linkedin className="w-5 h-5 text-primary-foreground/60 hover:text-primary-foreground transition-colors" />
+              </a>
             </div>
           </div>
         </div>

@@ -42,10 +42,10 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted">
+    <section id="services" className="py-20 bg-muted" aria-labelledby="services-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 id="services-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
            Ton matos outbound pour rider les opportunités
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -57,11 +57,11 @@ export const ServicesSection = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div 
+              <article 
                 key={index}
                 className="bg-card rounded-xl p-8 hover:scale-105 transition-transform duration-300 hover:shadow-lg group"
               >
-                <div className={`w-16 h-16 ${service.color} mb-6 group-hover:animate-shake`}>
+                <div className={`w-16 h-16 ${service.color} mb-6 group-hover:animate-shake`} aria-hidden="true">
                   <IconComponent className="w-full h-full" />
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">
@@ -70,13 +70,13 @@ export const ServicesSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </article>
             );
           })}
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" aria-label="Voir le détail de toutes nos solutions d'outreach B2B">
             Voir toutes nos solutions
           </Button>
         </div>

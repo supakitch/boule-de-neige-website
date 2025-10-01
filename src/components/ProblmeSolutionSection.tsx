@@ -16,10 +16,10 @@ export const ProblmeSolutionSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="probleme-solution" className="py-20 bg-background" aria-labelledby="probleme-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 id="probleme-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Le problème, on le connaît par cœur
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

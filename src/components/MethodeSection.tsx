@@ -30,10 +30,10 @@ export const MethodeSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted">
+    <section id="methode" className="py-20 bg-muted" aria-labelledby="methode-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 id="methode-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Notre méthode en 5 étapes
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

@@ -4,15 +4,18 @@ import huskyWink from "@/assets/husky-wink.png";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero pt-20 pb-16">
+    <section className="relative min-h-screen bg-gradient-hero pt-20 pb-16" aria-labelledby="hero-title">
+      <a href="#services" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-4 focus:bg-card focus:rounded">
+        Aller au contenu principal
+      </a>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Contenu principal */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight">
+              <h1 id="hero-title" className="text-4xl md:text-6xl font-bold text-primary leading-tight">
                 On remplit ton agenda plus vite qu'une descente de piste noire{" "}
-                <span className="inline-block animate-bounce">🎯</span>
+                <span className="inline-block animate-bounce" role="img" aria-label="cible">🎯</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
                 <span className="font-semibold text-accent-orange">Accélérateurs d'Outreach</span> —{" "}
@@ -22,11 +25,21 @@ export const HeroSection = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                aria-label="Planifier un audit gratuit de 15 minutes"
+              >
                 Planifier un audit gratuit
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                aria-label="Découvrir toutes nos offres d'outreach B2B"
+              >
                 Découvrir nos offres
               </Button>
             </div>
@@ -55,13 +68,16 @@ export const HeroSection = () => {
           </div>
 
           {/* Mascotte */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:justify-end" role="presentation">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-accent rounded-full opacity-20 blur-xl animate-pulse"></div>
+              <div className="absolute -inset-4 bg-gradient-accent rounded-full opacity-20 blur-xl animate-pulse" aria-hidden="true"></div>
               <img 
                 src={huskyWink} 
-                alt="Mascotte Husky de Boule2neige" 
+                alt="Mascotte Husky de Boule2neige faisant un clin d'oeil - représentant l'esprit complice et énergique de l'agence" 
                 className="relative w-64 h-64 md:w-80 md:h-80 animate-float"
+                width="320"
+                height="320"
+                loading="eager"
               />
             </div>
           </div>

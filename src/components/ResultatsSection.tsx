@@ -62,10 +62,10 @@ export const ResultatsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="resultats" className="py-20 bg-background" aria-labelledby="resultats-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 id="resultats-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Des résultats qui parlent d'eux-mêmes
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -74,28 +74,28 @@ export const ResultatsSection = () => {
         </div>
 
         {/* KPIs animés */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <div className="text-center bg-card-secondary rounded-xl p-8">
-            <TrendingUp className="w-12 h-12 text-accent-orange mx-auto mb-4" />
-            <div className="text-4xl font-bold text-primary mb-2">+{counters.responseRate}%</div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16" role="list">
+          <div className="text-center bg-card-secondary rounded-xl p-8" role="listitem">
+            <TrendingUp className="w-12 h-12 text-accent-orange mx-auto mb-4" aria-hidden="true" />
+            <div className="text-4xl font-bold text-primary mb-2" aria-label="Plus 40 pourcent">+{counters.responseRate}%</div>
             <div className="text-muted-foreground">Taux de réponse moyen</div>
           </div>
           
-          <div className="text-center bg-card-secondary rounded-xl p-8">
-            <Calendar className="w-12 h-12 text-accent-pink mx-auto mb-4" />
-            <div className="text-4xl font-bold text-primary mb-2">{counters.meetings}</div>
+          <div className="text-center bg-card-secondary rounded-xl p-8" role="listitem">
+            <Calendar className="w-12 h-12 text-accent-pink mx-auto mb-4" aria-hidden="true" />
+            <div className="text-4xl font-bold text-primary mb-2" aria-label="Huit rendez-vous">{counters.meetings}</div>
             <div className="text-muted-foreground">RDV qualifiés / semaine</div>
           </div>
           
-          <div className="text-center bg-card-secondary rounded-xl p-8">
-            <Clock className="w-12 h-12 text-accent-orange mx-auto mb-4" />
-            <div className="text-4xl font-bold text-primary mb-2">-{counters.cycleReduction}%</div>
+          <div className="text-center bg-card-secondary rounded-xl p-8" role="listitem">
+            <Clock className="w-12 h-12 text-accent-orange mx-auto mb-4" aria-hidden="true" />
+            <div className="text-4xl font-bold text-primary mb-2" aria-label="Moins 30 pourcent">-{counters.cycleReduction}%</div>
             <div className="text-muted-foreground">Cycles de vente raccourcis</div>
           </div>
           
-          <div className="text-center bg-card-secondary rounded-xl p-8">
-            <Star className="w-12 h-12 text-accent-pink mx-auto mb-4" />
-            <div className="text-4xl font-bold text-primary mb-2">{counters.satisfaction}/5</div>
+          <div className="text-center bg-card-secondary rounded-xl p-8" role="listitem">
+            <Star className="w-12 h-12 text-accent-pink mx-auto mb-4" aria-hidden="true" />
+            <div className="text-4xl font-bold text-primary mb-2" aria-label="Note de 4.9 sur 5">{counters.satisfaction}/5</div>
             <div className="text-muted-foreground">Satisfaction client</div>
           </div>
         </div>
