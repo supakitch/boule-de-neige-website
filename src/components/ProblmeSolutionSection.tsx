@@ -61,7 +61,7 @@ export const ProblmeSolutionSection = () => {
       </div>
 
       {/* Bordure diagonale en bas - côté gauche plus haut, descend vers la droite */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-background" 
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-muted" 
            style={{ 
              clipPath: 'polygon(0 30%, 100% 100%, 100% 100%, 0 100%)'
            }} 
