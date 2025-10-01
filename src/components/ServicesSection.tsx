@@ -1,7 +1,20 @@
+import React, { useRef } from "react";
 import { Mail, Phone, Linkedin, Megaphone, Users, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const ServicesSection = () => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) * 100) / buttonRef.current.clientWidth;
+      const y = ((e.clientY - rect.top) * 100) / buttonRef.current.clientHeight;
+      buttonRef.current.style.setProperty('--mouse-x', x.toString());
+      buttonRef.current.style.setProperty('--mouse-y', y.toString());
+    }
+  };
+
   const services = [
     {
       icon: Mail,
@@ -76,7 +89,19 @@ export const ServicesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" aria-label="Voir le détail de toutes nos solutions d'outreach B2B">
+          <Button 
+            ref={buttonRef}
+            variant="airbnb" 
+            size="lg" 
+            className="text-lg px-8 py-6 font-['Jost']"
+            aria-label="Voir le détail de toutes nos solutions d'outreach B2B"
+            onMouseMove={handleMouseMove}
+            style={{
+              ['--mouse-x' as string]: '50',
+              ['--mouse-y' as string]: '50',
+              backgroundPosition: 'calc((100 - var(--mouse-x, 50)) * 1%) calc((100 - var(--mouse-y, 50)) * 1%)',
+            }}
+          >
             Voir toutes nos solutions
           </Button>
         </div>
