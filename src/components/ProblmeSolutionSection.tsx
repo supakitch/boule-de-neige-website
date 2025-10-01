@@ -16,8 +16,8 @@ export const ProblmeSolutionSection = () => {
   ];
 
   return (
-    <section id="probleme-solution" className="py-20 bg-primary relative overflow-hidden" aria-labelledby="probleme-title" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)' }}>
-      <div className="container mx-auto px-4 relative z-10 pb-16">
+    <section id="probleme-solution" className="py-20 bg-primary relative overflow-hidden" aria-labelledby="probleme-title">
+      <div className="container mx-auto px-4 relative z-10 pb-24">
         <div className="text-center mb-16">
           <h2 id="probleme-title" className="text-4xl md:text-5xl font-bold text-white mb-6">
             Le problème, on le connaît par cœur
@@ -59,6 +59,9 @@ export const ProblmeSolutionSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Bordure inclinée en bas, responsive */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-20 md:h-24 bg-background origin-top-left skew-y-[-3deg]" />
     </section>
   );
 };
