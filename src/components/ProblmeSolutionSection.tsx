@@ -43,12 +43,12 @@ export const ProblmeSolutionSection = () => {
             </ul>
           </div>
 
-          {/* Solutions - décalée vers le bas */}
-          <div className="lg:mt-12">
+          {/* Solutions - liste décalée vers le bas */}
+          <div>
             <h3 className="text-2xl font-bold text-white mb-6">
               Notre approche Boule2neige
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-4 lg:mt-12">
               {solutions.map((solution, index) => (
                 <li key={index} className="flex items-start bg-white/5 backdrop-blur-sm rounded-xl p-4">
                   <CheckCircle className="w-6 h-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
