@@ -11,7 +11,7 @@ export const HeroSection = () => {
           {/* Contenu principal */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 id="hero-title" className="text-4xl font-bold leading-tight md:text-[E86D2A] text-yellow-950">
+              <h1 id="hero-title" className="text-6xl font-bold leading-tight text-foreground">
                 On remplit ton agenda plus vite qu'une descente de piste noire{" "}
                 <span className="inline-block animate-bounce" role="img" aria-label="cible">.</span>
               </h1>
