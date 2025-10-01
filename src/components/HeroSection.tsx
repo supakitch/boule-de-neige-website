@@ -13,7 +13,7 @@ export const HeroSection = () => {
             <div className="space-y-4">
               <h1 id="hero-title" className="text-6xl font-bold leading-tight text-foreground">
                 On remplit ton agenda plus vite qu'une descente de piste noire{" "}
-                <span className="inline-block text-accent-orange text-8xl leading-none -translate-y-3" role="img" aria-label="cible">.</span>
+                <span className="relative inline-block text-accent-orange text-8xl leading-none -top-3" role="img" aria-label="cible">.</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
                 <span className="font-semibold text-accent-orange">Accélérateurs d'Outreach</span> —{" "}
