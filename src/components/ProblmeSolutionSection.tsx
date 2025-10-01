@@ -16,8 +16,8 @@ export const ProblmeSolutionSection = () => {
   ];
 
   return (
-    <section id="probleme-solution" className="py-20 bg-primary relative overflow-hidden" aria-labelledby="probleme-title">
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="probleme-solution" className="py-20 bg-primary relative overflow-hidden" aria-labelledby="probleme-title" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 95%, 0 100%)' }}>
+      <div className="container mx-auto px-4 relative z-10 pb-16">
         <div className="text-center mb-16">
           <h2 id="probleme-title" className="text-4xl md:text-5xl font-bold text-white mb-6">
             Le problème, on le connaît par cœur
@@ -59,9 +59,6 @@ export const ProblmeSolutionSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Forme diagonale en bas */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-background" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%, 0 100%)' }}></div>
     </section>
   );
 };
