@@ -49,7 +49,7 @@ export const MethodeSection = () => {
                 <div className="absolute left-8 top-20 w-0.5 h-16 bg-gradient-accent opacity-30"></div>
               )}
               
-              <div className="flex gap-6 mb-8">
+              <div className="flex items-center gap-6 mb-8">
                 {/* Numéro */}
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center text-white font-bold text-xl">
