@@ -7,7 +7,7 @@ export const PhilosophieSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Citation */}
-            <div className="space-y-8">
+            <div className="space-y-8 max-w-2xl">
               <h2 id="philosophie-title" className="text-3xl md:text-4xl font-bold text-primary mb-8">
                 Notre philosophie
               </h2>
