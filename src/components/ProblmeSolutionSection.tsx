@@ -1,75 +1,67 @@
-import { CheckCircle, XCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, XCircle } from "lucide-react";
 
 export const ProblmeSolutionSection = () => {
   const problemes = [
     "Ciblage flou qui fait perdre du temps",
-    "Du cold basé uniquement sur email/LinkedIn, sans signaux d’affaires ni inbound", 
+    "Du cold blast uniquement sur email/LinkedIn, sans signaux d'affaires ni personnalisation", 
     "Manque de cadence multicanale coordonnée",
     "Cycles de vente qui s'éternisent"
   ];
 
   const solutions = [
     "ICP ultra-précis et personas détaillés",
-    "Séquences multicanales intégrant signaux d’affaires (email, LinkedIn, WhatsApp, calls, Ads…)",
+    "Séquences multicanales intégrant signaux d'affaires (email, LinkedIn, cold calling, ads, etc.)",
     "Coaching équipe commerciale et automatisation",
     "Reporting en temps réel et optimisation continue"
   ];
 
   return (
-    <section id="probleme-solution" className="py-20 bg-background" aria-labelledby="probleme-title">
-      <div className="container mx-auto px-4">
+    <section id="probleme-solution" className="py-20 bg-primary relative overflow-hidden" aria-labelledby="probleme-title">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 id="probleme-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 id="probleme-title" className="text-4xl md:text-5xl font-bold text-white mb-6">
             Le problème, on le connaît par cœur
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            La plupart des entreprises peinent à générer des rendez-vous qualifiés. 
-            Entre ciblage imprécis, séquences qui s’essoufflent et manque de coordination multicanale, elles gaspillent du temps et de l’énergie… 
-            sans obtenir les résultats attendus.
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            La plupart des stratégies outbound souffrent des mêmes maux : canaux en silo, messages génériques, séquences qui s'essoufflent et manque de coordination multicanale, elles gaspillent du temps et de l'énergie — sans obtenir les résultats attendus.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-start max-w-6xl mx-auto">
           {/* Problèmes */}
-          <div className="bg-card-secondary rounded-2xl p-8 border-l-4 border-destructive">
-            <h3 className="text-2xl font-bold text-primary mb-6 flex items-center">
-              <XCircle className="w-7 h-7 text-destructive mr-3" />
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6">
               Ce qui ne marche pas
             </h3>
             <ul className="space-y-4">
               {problemes.map((probleme, index) => (
-                <li key={index} className="flex items-start">
-                  <XCircle className="w-5 h-5 text-destructive mt-1 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-foreground">{probleme}</span>
+                <li key={index} className="flex items-start bg-white/5 backdrop-blur-sm rounded-xl p-4">
+                  <XCircle className="w-6 h-6 text-red-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-base text-white/90">{probleme}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Solutions */}
-          <div className="bg-card rounded-2xl p-8 border-l-4 border-accent-orange">
-            <h3 className="text-2xl font-bold text-primary mb-6 flex items-center">
-              <CheckCircle className="w-7 h-7 text-accent-orange mr-3" />
+          {/* Solutions - décalée vers le bas */}
+          <div className="lg:mt-12">
+            <h3 className="text-2xl font-bold text-white mb-6">
               Notre approche Boule2neige
             </h3>
             <ul className="space-y-4">
               {solutions.map((solution, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-accent-orange mt-1 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-foreground">{solution}</span>
+                <li key={index} className="flex items-start bg-white/5 backdrop-blur-sm rounded-xl p-4">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-base text-white/90">{solution}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-
-        {/* Flèche de transition */}
-        <div className="flex justify-center mt-12">
-          <div className="bg-gradient-accent p-4 rounded-full animate-pulse-glow">
-            <ArrowRight className="w-8 h-8 text-white" />
-          </div>
-        </div>
       </div>
+
+      {/* Forme diagonale en bas */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-background" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%, 0 100%)' }}></div>
     </section>
   );
 };
