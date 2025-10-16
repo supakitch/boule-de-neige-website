@@ -56,9 +56,11 @@ export const HeroSection = () => {
                 <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
               </Button>
             </a>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6" aria-label="Découvrir toutes nos offres d'outreach B2B">
-                Découvrir nos offres
-              </Button>
+              <a href="#probleme-solution">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6" aria-label="Découvrir toutes nos offres d'outreach B2B">
+                  Découvrir nos offres
+                </Button>
+              </a>
             </div>
 
             {/* Preuve sociale */}
