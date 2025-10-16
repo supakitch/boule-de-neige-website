@@ -25,7 +25,7 @@ export const HeroSection = () => {
       </a>
       
       {/* Logo */}
-      <div className="container mx-auto px-4 pt-4 pb-6">
+      <div className="container mx-auto px-4 pt-2 pb-6">
         <div className="flex justify-center">
           <img src={logo} alt="Boule2neige - Accélérateurs d'Outreach" className="h-20 md:h-28" />
         </div>
