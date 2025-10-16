@@ -76,7 +76,7 @@ export const SnowballAnimation = () => {
             border-radius: 50%;
             border: 1.5px solid rgba(255, 255, 255, 0.6);
             filter: blur(0.5px);
-            z-index: 1;
+            z-index: 0;
           }
           
           .snowball__texture {
@@ -100,8 +100,8 @@ export const SnowballAnimation = () => {
       </style>
       <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none overflow-visible z-50" style={{ fontSize: '16px' }}>
         <div className="snowball">
-          <div className="snowball__texture"></div>
           <div className="snowball__highlight"></div>
+          <div className="snowball__texture"></div>
           <div className="snowball__inner-shadow"></div>
           
           <div className="snowball__side-shadows"></div>
