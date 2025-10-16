@@ -26,7 +26,7 @@ export const CTASection = () => {
             </h2>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Arrête de subir ta prospection. Prends le contrôle et transforme-la en 
+              Ne subit pas ta prospection. Prends le contrôle et transforme-la en 
               véritable machine à générer des opportunités qualifiées.
             </p>
           </div>
