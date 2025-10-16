@@ -60,17 +60,6 @@ export const HeroSection = () => {
 
             {/* Preuve sociale */}
             <div className="space-y-4">
-              <div className="flex items-center gap-4 flex-wrap">
-                <div className="bg-card-secondary p-3 rounded-lg">
-                  <Users className="w-6 h-6 text-accent-pink" />
-                </div>
-                <div className="bg-card-secondary p-3 rounded-lg">
-                  <Target className="w-6 h-6 text-accent-orange" />
-                </div>
-                <div className="bg-card-secondary p-3 rounded-lg">
-                  <TrendingUp className="w-6 h-6 text-accent-pink" />
-                </div>
-              </div>
               <blockquote className="italic text-lg text-muted-foreground border-l-4 border-accent-orange pl-4">
                 "Depuis qu'on travaille avec Boule2neige, on a multiplié par 3 nos RDV qualifiés. 
                 Leur approche est redoutablement efficace !"
