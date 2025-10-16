@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, Users, TrendingUp } from "lucide-react";
 import huskyWink from "@/assets/husky-wink.png";
+import logo from "@/assets/logo-horizontal-dark.svg";
 
 export const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,6 +23,14 @@ export const HeroSection = () => {
       <a href="#services" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-4 focus:bg-card focus:rounded">
         Aller au contenu principal
       </a>
+      
+      {/* Logo */}
+      <div className="container mx-auto px-4 pt-8 pb-4">
+        <div className="flex justify-center">
+          <img src={logo} alt="Boule2neige - Accélérateurs d'Outreach" className="h-12 md:h-16" />
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Contenu principal */}
