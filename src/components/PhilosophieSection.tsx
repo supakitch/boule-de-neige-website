@@ -28,7 +28,7 @@ export const PhilosophieSection = () => {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                 <div className="bg-card p-4 rounded-lg">
                   <div className="text-lg md:text-xl font-bold text-accent-orange mb-1 whitespace-nowrap">Formation</div>
                   <div className="text-sm text-muted-foreground">Transmission des méthodes</div>
