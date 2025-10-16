@@ -28,7 +28,7 @@ export const ProblmeSolutionSection = () => {
           </h2>
           <p className="text-lg text-white/70 max-w-3xl mx-auto">
             La plupart des stratégies outbound souffrent des mêmes maux : canaux en silo, messages génériques, séquences
-            qui s'essoufflent et manque de coordination multicanale, elles gaspillent du temps et de l'énergie — sans
+            qui s'essoufflent et manque de coordination multicanale, elles gaspillent du temps et de l'énergie, sans
             obtenir les résultats attendus.
           </p>
         </div>
