@@ -37,6 +37,7 @@ export const HeroSection = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
+            <a href="https://zcal.co/mcomptier/30min" target="_blank" rel="noopener noreferrer">
               <Button 
                 ref={buttonRef}
                 variant="airbnb" 
@@ -53,6 +54,7 @@ export const HeroSection = () => {
                 Planifier un audit gratuit
                 <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
               </Button>
+            </a>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6" aria-label="Découvrir toutes nos offres d'outreach B2B">
                 Découvrir nos offres
               </Button>

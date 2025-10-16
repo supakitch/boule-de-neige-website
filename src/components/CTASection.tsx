@@ -42,23 +42,25 @@ export const CTASection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <Button 
-              ref={buttonRef}
-              variant="airbnb" 
-              size="lg" 
-              className="text-lg px-10 py-6 font-['Jost']"
-              aria-label="Planifier un audit gratuit de 15 minutes avec notre équipe"
-              onMouseMove={handleMouseMove}
-              style={{
-                ['--mouse-x' as string]: '50',
-                ['--mouse-y' as string]: '50',
-                backgroundPosition: 'calc((100 - var(--mouse-x, 50)) * 1%) calc((100 - var(--mouse-y, 50)) * 1%)',
-              }}
-            >
-              <Calendar className="mr-2 w-6 h-6" aria-hidden="true" />
-              Planifier un audit gratuit
-              <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
-            </Button>
+            <a href="https://zcal.co/mcomptier/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                ref={buttonRef}
+                variant="airbnb" 
+                size="lg" 
+                className="text-lg px-10 py-6 font-['Jost']"
+                aria-label="Planifier un audit gratuit de 15 minutes avec notre équipe"
+                onMouseMove={handleMouseMove}
+                style={{
+                  ['--mouse-x' as string]: '50',
+                  ['--mouse-y' as string]: '50',
+                  backgroundPosition: 'calc((100 - var(--mouse-x, 50)) * 1%) calc((100 - var(--mouse-y, 50)) * 1%)',
+                }}
+              >
+                <Calendar className="mr-2 w-6 h-6" aria-hidden="true" />
+                Planifier un audit gratuit
+                <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
+              </Button>
+            </a>
             
             <Button 
               variant="outline" 
