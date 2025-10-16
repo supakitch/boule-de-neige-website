@@ -57,18 +57,6 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/60 text-sm">© 2025 Boule2neige. Tous droits réservés.</div>
 
-            <nav className="flex space-x-6 text-sm text-primary-foreground/60" aria-label="Liens légaux">
-              <a href="#mentions-legales" className="hover:text-primary-foreground transition-colors">
-                Mentions légales
-              </a>
-              <a href="#rgpd" className="hover:text-primary-foreground transition-colors">
-                RGPD
-              </a>
-              <a href="#cgv" className="hover:text-primary-foreground transition-colors">
-                CGV
-              </a>
-            </nav>
-
             <div className="flex space-x-4">
               <a
                 href="https://www.linkedin.com/company/boule2neige"
