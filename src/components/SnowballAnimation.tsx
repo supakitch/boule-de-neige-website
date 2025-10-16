@@ -14,7 +14,7 @@ export const SnowballAnimation = () => {
             100% {
               left: calc(100% + 3em);
               bottom: 0%;
-              transform: rotate(-1080deg) scale(1.5);
+              transform: rotate(1080deg) scale(1.5);
             }
           }
           
@@ -23,7 +23,7 @@ export const SnowballAnimation = () => {
               transform: rotate(0);
             }
             to {
-              transform: rotate(-360deg);
+              transform: rotate(360deg);
             }
           }
           
@@ -38,7 +38,6 @@ export const SnowballAnimation = () => {
           
           .snowball {
             position: absolute;
-            bottom: 2em;
             width: 2.5em;
             height: 2.5em;
             border-radius: 50%;
@@ -76,7 +75,7 @@ export const SnowballAnimation = () => {
           }
           
           .snowball__texture:before {
-            animation: ballTexture 15s linear infinite;
+            animation: ballTexture 15s linear infinite reverse;
             background: url(${snowTexture}) 0 0 / 50% 100%;
             content: "";
             display: block;
@@ -89,7 +88,7 @@ export const SnowballAnimation = () => {
           }
         `}
       </style>
-      <div className="absolute bottom-0 left-0 right-0 pointer-events-none overflow-visible z-10" style={{ fontSize: '16px' }}>
+      <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none overflow-visible z-50" style={{ fontSize: '16px' }}>
         <div className="snowball">
           <div className="snowball__texture"></div>
           <div className="snowball__inner-shadow"></div>
