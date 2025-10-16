@@ -68,7 +68,7 @@ export const Footer = () => {
             </nav>
             
             <div className="flex space-x-4">
-              <a href="https://linkedin.com/company/boule2neige" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur LinkedIn">
+              <a href="https://www.linkedin.com/company/boule2neige" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur LinkedIn">
                 <Linkedin className="w-5 h-5 text-primary-foreground/60 hover:text-primary-foreground transition-colors" />
               </a>
             </div>
