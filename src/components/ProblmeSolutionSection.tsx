@@ -1,4 +1,5 @@
 import { CheckCircle, XCircle } from "lucide-react";
+import { SnowballAnimation } from "./SnowballAnimation";
 
 export const ProblmeSolutionSection = () => {
   const problemes = [
@@ -70,6 +71,8 @@ export const ProblmeSolutionSection = () => {
           clipPath: "polygon(0 30%, 100% 100%, 100% 100%, 0 100%)",
         }}
       />
+      
+      <SnowballAnimation />
     </section>
   );
 };
