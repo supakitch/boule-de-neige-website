@@ -45,7 +45,7 @@ export const PhilosophieSection = () => {
             </div>
 
             {/* Mascotte */}
-            <div className="flex justify-center lg:justify-end" role="presentation">
+            <div className="hidden lg:flex justify-center lg:justify-end" role="presentation">
               <div className="relative">
                 <div className="absolute -inset-8 bg-gradient-accent rounded-full opacity-10 blur-2xl" aria-hidden="true"></div>
                 <img 
