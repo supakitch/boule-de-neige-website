@@ -23,11 +23,11 @@ export const ProblmeSolutionSection = () => {
       aria-labelledby="probleme-title"
     >
       <div className="container mx-auto px-4 pb-12">
-        <div className="text-center mb-16">
+        <div className="text-left lg:text-center mb-16">
           <h2 id="probleme-title" className="text-4xl md:text-5xl font-bold text-white mb-6">
             Le problème, on le connaît par cœur
           </h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
+          <p className="text-lg text-white/70 max-w-3xl lg:mx-auto">
             La plupart des stratégies outbound souffrent des mêmes maux : canaux en silo, messages génériques, séquences
             qui s'essoufflent et manque de coordination multicanale, elles gaspillent du temps et de l'énergie, sans
             obtenir les résultats attendus.
