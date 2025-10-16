@@ -71,10 +71,10 @@ export const HeroSection = () => {
           </div>
 
           {/* Mascotte */}
-          <div className="relative flex justify-center lg:justify-end" role="presentation">
+          <div className="relative flex justify-center" role="presentation">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-accent rounded-full opacity-20 blur-xl animate-pulse" aria-hidden="true"></div>
-              <img src={huskyWink} alt="Mascotte Husky de Boule2neige faisant un clin d'oeil - représentant l'esprit complice et énergique de l'agence" className="relative w-64 h-64 md:w-80 md:h-80 animate-float" width="320" height="320" loading="eager" />
+              <div className="absolute -inset-8 bg-gradient-accent rounded-full opacity-20 blur-xl animate-pulse" aria-hidden="true"></div>
+              <img src={huskyWink} alt="Mascotte Husky de Boule2neige faisant un clin d'oeil - représentant l'esprit complice et énergique de l'agence" className="relative w-80 h-80 md:w-96 md:h-96 animate-float" width="384" height="384" loading="eager" />
             </div>
           </div>
         </div>
