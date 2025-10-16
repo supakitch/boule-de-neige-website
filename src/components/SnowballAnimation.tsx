@@ -41,7 +41,7 @@ export const SnowballAnimation = () => {
             width: 2.5em;
             height: 2.5em;
             border-radius: 50%;
-            animation: snowball-roll 15s linear infinite;
+            animation: snowball-roll 10s linear infinite;
           }
           
           .snowball__texture,
@@ -54,7 +54,7 @@ export const SnowballAnimation = () => {
           }
           
           .snowball__inner-shadow {
-            animation: ballInnerShadow 15s linear infinite;
+            animation: ballInnerShadow 10s linear infinite;
             box-shadow:
               0 0.1em 0.2em hsla(0, 0%, 0%, 0.3),
               0 0 0.2em hsla(0, 0%, 0%, 0.1) inset,
@@ -85,7 +85,7 @@ export const SnowballAnimation = () => {
           }
           
           .snowball__texture:before {
-            animation: ballTexture 15s linear infinite reverse;
+            animation: ballTexture 10s linear infinite reverse;
             background: url(${snowTexture}) 0 0 / 50% 100%;
             content: "";
             display: block;
