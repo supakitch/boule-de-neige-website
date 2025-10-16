@@ -84,7 +84,7 @@ export const CTASection = () => {
             
             <div className="bg-card p-6 rounded-xl">
               <div className="text-3xl font-bold text-accent-pink mb-2">7 jours</div>
-              <div className="text-muted-foreground">Premiers résultats visibles</div>
+              <div className="text-muted-foreground">Premiers livrables</div>
             </div>
             
             <div className="bg-card p-6 rounded-xl">
