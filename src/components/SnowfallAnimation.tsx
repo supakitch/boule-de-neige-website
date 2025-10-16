@@ -1,6 +1,6 @@
 export const SnowfallAnimation = () => {
   return (
-    <div className="absolute bottom-0 left-0 right-0 h-[300px] pointer-events-none overflow-hidden z-10">
+    <div className="absolute bottom-0 left-0 right-0 h-[128px] pointer-events-none overflow-hidden z-10">
       <div className="snowball" />
       <style>{`
         .snowball {
@@ -17,7 +17,7 @@ export const SnowfallAnimation = () => {
 
         @keyframes snowball-fall {
           0% {
-            transform: translateX(-120px) translateY(40px) scale(0.2);
+            transform: translateX(-120px) translateY(-90px) scale(0.2);
             opacity: 0;
           }
           5% {
@@ -27,7 +27,7 @@ export const SnowfallAnimation = () => {
             opacity: 0.9;
           }
           100% {
-            transform: translateX(calc(100vw + 120px)) translateY(128px) scale(2.5);
+            transform: translateX(calc(100vw + 120px)) translateY(0px) scale(2.5);
             opacity: 0;
           }
         }
