@@ -8,10 +8,12 @@ export const SnowballAnimation = () => {
           @keyframes snowball-roll {
             0% {
               left: -3em;
+              bottom: 70%;
               transform: rotate(0deg) scale(0.8);
             }
             100% {
               left: calc(100% + 3em);
+              bottom: 0%;
               transform: rotate(-1080deg) scale(1.5);
             }
           }
@@ -40,7 +42,7 @@ export const SnowballAnimation = () => {
             width: 2.5em;
             height: 2.5em;
             border-radius: 50%;
-            animation: snowball-roll 15s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            animation: snowball-roll 15s linear infinite;
           }
           
           .snowball__texture,
@@ -60,19 +62,6 @@ export const SnowballAnimation = () => {
               0 -1em 0.5em hsla(0, 0%, 0%, 0.15) inset;
           }
           
-          .snowball__outer-shadow {
-            position: absolute;
-            background-image: linear-gradient(hsla(0, 0%, 0%, 0.15), hsla(0, 0%, 0%, 0));
-            border-radius: 0 0 50% 50% / 0 0 100% 100%;
-            filter: blur(2px);
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 250%;
-            transform: rotate(20deg);
-            transform-origin: 50% 0;
-            z-index: -2;
-          }
           
           .snowball__side-shadows {
             background-color: hsla(0, 0%, 0%, 0.1);
@@ -104,7 +93,7 @@ export const SnowballAnimation = () => {
         <div className="snowball">
           <div className="snowball__texture"></div>
           <div className="snowball__inner-shadow"></div>
-          <div className="snowball__outer-shadow"></div>
+          
           <div className="snowball__side-shadows"></div>
         </div>
       </div>
