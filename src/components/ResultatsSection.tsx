@@ -103,7 +103,10 @@ export const ResultatsSection = () => {
 
         {/* Témoignages - Carousel mobile, Grid desktop */}
         <div className="md:hidden">
-          <Carousel className="w-full max-w-xs mx-auto">
+          <Carousel 
+            opts={{ loop: true }}
+            className="w-full max-w-xs mx-auto"
+          >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
