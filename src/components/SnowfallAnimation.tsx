@@ -11,13 +11,13 @@ export const SnowfallAnimation = () => {
           background: radial-gradient(circle at 30% 30%, #ffffff, #f0f0f0);
           box-shadow: 0 4px 20px rgba(255, 255, 255, 0.6);
           filter: blur(1px);
-          animation: snowball-fall 7s ease-in-out infinite;
+          animation: snowball-fall 15s ease-in-out infinite;
           will-change: transform;
         }
 
         @keyframes snowball-fall {
           0% {
-            transform: translateX(-120px) translateY(65px) scale(0.2);
+            transform: translateX(-120px) translateY(40px) scale(0.2);
             opacity: 0;
           }
           5% {
@@ -27,7 +27,7 @@ export const SnowfallAnimation = () => {
             opacity: 0.9;
           }
           100% {
-            transform: translateX(calc(100vw + 120px)) translateY(165px) scale(2.5);
+            transform: translateX(calc(100vw + 120px)) translateY(128px) scale(2.5);
             opacity: 0;
           }
         }
