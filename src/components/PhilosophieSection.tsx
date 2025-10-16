@@ -5,7 +5,22 @@ export const PhilosophieSection = () => {
     <section id="philosophie" className="py-20 bg-background" aria-labelledby="philosophie-title">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-[60%_40%] gap-12 items-center">
+          <div className="grid lg:grid-cols-[40%_60%] gap-12 items-center">
+            {/* Mascotte */}
+            <div className="hidden lg:flex justify-center lg:justify-start" role="presentation">
+              <div className="relative">
+                <div className="absolute -inset-8 bg-gradient-accent rounded-full opacity-10 blur-2xl" aria-hidden="true"></div>
+                <img 
+                  src={huskyHappy} 
+                  alt="Mascotte Husky heureuse illustrant la philosophie Boule2neige de transmission et coaching" 
+                  className="relative w-72 h-72 md:w-96 md:h-96 animate-float"
+                  width="384"
+                  height="384"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
             {/* Citation */}
             <div className="space-y-8 max-w-3xl">
               <h2 id="philosophie-title" className="text-3xl md:text-4xl font-bold text-primary mb-8">
@@ -41,21 +56,6 @@ export const PhilosophieSection = () => {
                   <div className="text-lg md:text-xl font-bold text-accent-orange mb-1 whitespace-nowrap">Autonomie</div>
                   <div className="text-sm text-muted-foreground">Indépendance totale</div>
                 </div>
-              </div>
-            </div>
-
-            {/* Mascotte */}
-            <div className="hidden lg:flex justify-center lg:justify-end" role="presentation">
-              <div className="relative">
-                <div className="absolute -inset-8 bg-gradient-accent rounded-full opacity-10 blur-2xl" aria-hidden="true"></div>
-                <img 
-                  src={huskyHappy} 
-                  alt="Mascotte Husky heureuse illustrant la philosophie Boule2neige de transmission et coaching" 
-                  className="relative w-72 h-72 md:w-96 md:h-96 animate-float"
-                  width="384"
-                  height="384"
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>
