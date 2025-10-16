@@ -1,5 +1,4 @@
 import { CheckCircle, XCircle } from "lucide-react";
-import { SnowfallAnimation } from "./SnowfallAnimation";
 
 export const ProblmeSolutionSection = () => {
   const problemes = [
@@ -62,9 +61,6 @@ export const ProblmeSolutionSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Animation boule de neige */}
-      <SnowfallAnimation />
 
       {/* Bordure diagonale en bas - côté gauche plus haut, descend vers la droite */}
       <div
