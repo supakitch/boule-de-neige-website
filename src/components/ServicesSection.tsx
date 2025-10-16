@@ -92,6 +92,7 @@ export const ServicesSection = () => {
             className="text-lg px-8 py-6 font-['Jost']"
             aria-label="Voir le détail de toutes nos solutions d'outreach B2B"
             onMouseMove={handleMouseMove}
+            onClick={() => window.open('https://zcal.co/mcomptier/30min', '_blank')}
             style={{
               ["--mouse-x" as string]: "50",
               ["--mouse-y" as string]: "50",
