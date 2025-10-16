@@ -17,7 +17,7 @@ export const SnowfallAnimation = () => {
 
         @keyframes snowball-fall {
           0% {
-            transform: translateX(-120px) translateY(-30px) scale(0.2);
+            transform: translateX(-120px) translateY(90px) scale(0.2);
             opacity: 0;
           }
           5% {
@@ -27,7 +27,7 @@ export const SnowfallAnimation = () => {
             opacity: 0.9;
           }
           100% {
-            transform: translateX(calc(100vw + 120px)) translateY(210px) scale(2.5);
+            transform: translateX(calc(100vw + 120px)) translateY(230px) scale(2.5);
             opacity: 0;
           }
         }
