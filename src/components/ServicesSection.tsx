@@ -57,11 +57,11 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="py-20" style={{ backgroundColor: "#ffece8" }} aria-labelledby="services-title">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-left lg:text-center mb-16">
           <h2 id="services-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Ton matos outbound pour rider les opportunités
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl lg:mx-auto">
             Six leviers d'acquisition synchronisés pour une approche complète et redoutable.
           </p>
         </div>

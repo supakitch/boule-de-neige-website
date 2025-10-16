@@ -65,11 +65,11 @@ export const ResultatsSection = () => {
   return (
     <section id="resultats" className="py-20 bg-background" aria-labelledby="resultats-title">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-left lg:text-center mb-16">
           <h2 id="resultats-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Des résultats qui parlent d'eux-mêmes
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl lg:mx-auto">
             Nos clients ne le disent pas par politesse. Les chiffres parlent.
           </p>
         </div>
