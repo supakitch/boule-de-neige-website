@@ -21,11 +21,11 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />
-                <span className="text-primary-foreground/80">contact@boule2neige.fr</span>
+                <span className="text-primary-foreground/80">camille@boule2neige.fr</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
-                <span className="text-primary-foreground/80">+33 1 23 45 67 89</span>
+                <span className="text-primary-foreground/80">+33 6 06 62 92 26</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5" />
@@ -37,13 +37,11 @@ export const Footer = () => {
           {/* Newsletter */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Newsletter "Piste Verte"</h4>
-            <p className="text-primary-foreground/80 text-sm">
-              Tips outbound et actualités business chaque semaine.
-            </p>
+            <p className="text-primary-foreground/80 text-sm">Tips outbound et actualités business chaque mois.</p>
             <div className="flex gap-2">
-              <Input 
+              <Input
                 type="email"
-                placeholder="Ton email" 
+                placeholder="Ton email"
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
                 aria-label="Adresse email pour la newsletter"
               />
@@ -57,18 +55,27 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-primary-foreground/60 text-sm">
-              © 2025 Boule2neige. Tous droits réservés.
-            </div>
-            
+            <div className="text-primary-foreground/60 text-sm">© 2025 Boule2neige. Tous droits réservés.</div>
+
             <nav className="flex space-x-6 text-sm text-primary-foreground/60" aria-label="Liens légaux">
-              <a href="#mentions-legales" className="hover:text-primary-foreground transition-colors">Mentions légales</a>
-              <a href="#rgpd" className="hover:text-primary-foreground transition-colors">RGPD</a>
-              <a href="#cgv" className="hover:text-primary-foreground transition-colors">CGV</a>
+              <a href="#mentions-legales" className="hover:text-primary-foreground transition-colors">
+                Mentions légales
+              </a>
+              <a href="#rgpd" className="hover:text-primary-foreground transition-colors">
+                RGPD
+              </a>
+              <a href="#cgv" className="hover:text-primary-foreground transition-colors">
+                CGV
+              </a>
             </nav>
-            
+
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/boule2neige" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur LinkedIn">
+              <a
+                href="https://www.linkedin.com/company/boule2neige"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivez-nous sur LinkedIn"
+              >
                 <Linkedin className="w-5 h-5 text-primary-foreground/60 hover:text-primary-foreground transition-colors" />
               </a>
             </div>
