@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { TrendingUp, Calendar, Clock, Star } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const ResultatsSection = () => {
   const [counters, setCounters] = useState({
@@ -100,8 +101,30 @@ export const ResultatsSection = () => {
           </div>
         </div>
 
-        {/* Témoignages */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Témoignages - Carousel mobile, Grid desktop */}
+        <div className="md:hidden">
+          <Carousel className="w-full max-w-xs mx-auto">
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index}>
+                  <div className="bg-card rounded-xl p-6 border-l-4 border-accent-orange">
+                    <blockquote className="text-muted-foreground italic mb-4">
+                      "{testimonial.text}"
+                    </blockquote>
+                    <footer className="space-y-1">
+                      <div className="font-semibold text-primary">{testimonial.author}</div>
+                      <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                    </footer>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+
+        <div className="hidden md:grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-card rounded-xl p-6 border-l-4 border-accent-orange">
               <blockquote className="text-muted-foreground italic mb-4">
