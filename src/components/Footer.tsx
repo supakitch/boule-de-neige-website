@@ -6,26 +6,13 @@ export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-16" role="contentinfo">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold font-faustina">Boule2neige</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
               Accélérateurs d'Outreach. On remplit ton agenda plus vite qu'une descente de piste noire.
             </p>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li>Cold Emailing</li>
-              <li>Cold Calling</li>
-              <li>LinkedIn Outreach</li>
-              <li>Ads B2B</li>
-              <li>Allbound</li>
-              <li>Automation & Coaching</li>
-            </ul>
           </div>
 
           {/* Contact */}
