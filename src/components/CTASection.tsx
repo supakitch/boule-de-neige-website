@@ -65,7 +65,7 @@ export const CTASection = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="text-lg px-10 py-6 bg-card hover:bg-card-secondary"
+              className="text-lg px-10 py-6 bg-card hover:bg-card-secondary hover:text-foreground"
               aria-label="Nous contacter pour discuter de votre projet"
             >
               <MessageCircle className="mr-2 w-6 h-6" aria-hidden="true" />
