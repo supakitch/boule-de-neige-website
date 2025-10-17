@@ -8,9 +8,7 @@ const OffresSection = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Nos Offres.
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Nos Offres.</h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
             On s'adapte à la piste. Que tu sois en plein schuss ou que tu prépares ton premier virage.
           </p>
@@ -22,16 +20,13 @@ const OffresSection = () => {
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-accent-orange mb-2">
-                  Stratégie et cadrage
-                </h3>
-                <p className="text-sm text-accent-orange/90 font-medium">
-                  15 jours de cadrage
-                </p>
+                <h3 className="text-2xl font-bold text-accent-orange mb-2">Stratégie et cadrage</h3>
+                <p className="text-sm text-accent-orange/90 font-medium">15 jours de cadrage</p>
               </div>
 
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                On revoit tout ton cycle de vente, de la prospection au closing. En quinze jours, on remet ton process commercial à niveau. Ensuite, tu choisis les leviers à activer avec nos experts dédiés.
+                On revoit tout ton cycle de vente, de la prospection au closing. En quinze jours, on optimise ton
+                process commerciale. Ensuite, tu choisis les leviers à activer avec nos experts dédiés.
               </p>
 
               <div className="space-y-4 mb-8 flex-1">
@@ -43,15 +38,11 @@ const OffresSection = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-foreground/80 text-sm">
-                    Revue de ton ICP, message et proposition de valeur
-                  </p>
+                  <p className="text-foreground/80 text-sm">Revue de ton ICP, message et proposition de valeur</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-foreground/80 text-sm">
-                    Analyse des canaux, outils et workflows existants
-                  </p>
+                  <p className="text-foreground/80 text-sm">Analyse des canaux, outils et workflows existants</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
@@ -61,21 +52,15 @@ const OffresSection = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-foreground/80 text-sm">
-                    Ateliers collaboratifs avec ton équipe
-                  </p>
+                  <p className="text-foreground/80 text-sm">Ateliers collaboratifs avec ton équipe</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-foreground/80 text-sm">
-                    Recommandations pour améliorer conversion et cadence
-                  </p>
+                  <p className="text-foreground/80 text-sm">Recommandations pour améliorer conversion et cadence</p>
                 </div>
               </div>
 
-              <Button 
-                className="w-full bg-accent-orange hover:bg-accent-orange/90 text-white rounded-xl py-6 text-base font-semibold"
-              >
+              <Button className="w-full bg-accent-orange hover:bg-accent-orange/90 text-white rounded-xl py-6 text-base font-semibold">
                 Planifier un audit gratuit
               </Button>
             </CardContent>
@@ -85,39 +70,50 @@ const OffresSection = () => {
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-accent-pink mb-2">
-                  Exécution à la carte
-                </h3>
+                <h3 className="text-2xl font-bold text-accent-pink mb-2">Exécution à la carte</h3>
               </div>
 
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                Chaque mission est menée par un expert de son domaine. On assemble pour toi une équipe sur mesure, adaptée à ton niveau de maturité et à tes objectifs.
+                Chaque mission est menée par un expert de son domaine. On assemble pour toi une équipe sur mesure,
+                adaptée à ton niveau de maturité et à tes objectifs.
               </p>
 
               <div className="mb-6 flex-1">
                 <p className="text-foreground font-semibold mb-6">Modules possibles :</p>
-                
+
                 <div className="grid grid-cols-2 gap-3 mb-6">
                   <div className="bg-accent-pink/5 p-4 rounded-xl flex items-center gap-2.5">
                     <Target className="text-accent-pink flex-shrink-0" size={20} />
-                    <span className="text-sm text-foreground">Prospection<br/>multicanale</span>
+                    <span className="text-sm text-foreground">
+                      Prospection
+                      <br />
+                      multicanale
+                    </span>
                   </div>
-                  
+
                   <div className="bg-accent-pink/5 p-4 rounded-xl flex items-center gap-2.5">
                     <Phone className="text-accent-pink flex-shrink-0" size={20} />
-                    <span className="text-sm text-foreground">Cold & Warm<br/>Calling</span>
+                    <span className="text-sm text-foreground">
+                      Cold & Warm
+                      <br />
+                      Calling
+                    </span>
                   </div>
-                  
+
                   <div className="bg-accent-pink/5 p-4 rounded-xl flex items-center gap-2.5">
                     <Megaphone className="text-accent-pink flex-shrink-0" size={20} />
                     <span className="text-sm text-foreground">Ads B2B</span>
                   </div>
-                  
+
                   <div className="bg-accent-pink/5 p-4 rounded-xl flex items-center gap-2.5">
                     <TrendingUp className="text-accent-pink flex-shrink-0" size={20} />
-                    <span className="text-sm text-foreground">Contenu<br/>LinkedIn</span>
+                    <span className="text-sm text-foreground">
+                      Contenu
+                      <br />
+                      LinkedIn
+                    </span>
                   </div>
-                  
+
                   <div className="bg-accent-pink/5 p-4 rounded-xl flex items-center gap-2.5 col-span-2">
                     <Users className="text-accent-pink flex-shrink-0" size={20} />
                     <span className="text-sm text-foreground">Sourcing de talents</span>
@@ -125,16 +121,12 @@ const OffresSection = () => {
                 </div>
 
                 <div className="bg-accent-pink/10 border-l-4 border-accent-pink p-4 rounded-r-lg">
-                  <p className="text-sm text-foreground/70 italic">
-                    3 mois d'engagement pour chaque module.
-                  </p>
+                  <p className="text-sm text-foreground/70 italic">3 mois d'engagement pour chaque module.</p>
                 </div>
               </div>
 
               <div className="mt-auto">
-                <Button 
-                  className="w-full bg-accent-pink hover:bg-accent-pink/90 text-white rounded-xl py-6 text-base font-semibold"
-                >
+                <Button className="w-full bg-accent-pink hover:bg-accent-pink/90 text-white rounded-xl py-6 text-base font-semibold">
                   Discuter de nos modules
                 </Button>
               </div>
@@ -145,21 +137,18 @@ const OffresSection = () => {
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-accent-orange mb-2">
-                  Formation & Coaching
-                </h3>
-                <p className="text-sm text-accent-orange/90 font-medium">
-                  Formats : 1 à 5 jours
-                </p>
+                <h3 className="text-2xl font-bold text-accent-orange mb-2">Formation & Coaching</h3>
+                <p className="text-sm text-accent-orange/90 font-medium">Formats : 1 à 5 jours</p>
               </div>
 
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                Rends ton équipe commerciale autonome et redoutable. On forme et on coache tes équipes pour qu'elles maîtrisent l'art de la prospection, de la relance et du closing moderne.
+                Rends ton équipe commerciale autonome et redoutable. On forme et on coache tes équipes pour qu'elles
+                maîtrisent l'art de la prospection, de la relance et du closing moderne.
               </p>
 
               <div className="mb-6">
                 <p className="text-foreground font-semibold mb-4">Formations disponibles :</p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <BookOpen className="text-accent-orange mt-1 flex-shrink-0" size={20} />
@@ -192,16 +181,13 @@ const OffresSection = () => {
               </div>
 
               <div className="mt-auto">
-                <Button 
-                  className="w-full bg-accent-orange hover:bg-accent-orange/90 text-white rounded-xl py-6 text-base font-semibold"
-                >
+                <Button className="w-full bg-accent-orange hover:bg-accent-orange/90 text-white rounded-xl py-6 text-base font-semibold">
                   Découvrir la formation
                 </Button>
               </div>
             </CardContent>
           </Card>
         </div>
-
       </div>
     </section>
   );
