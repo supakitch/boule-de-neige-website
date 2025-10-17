@@ -67,8 +67,9 @@ export const ProblmeSolutionSection = () => {
       <div
         className="absolute bottom-0 left-0 right-0 h-32"
         style={{
-          backgroundColor: "#ffece8",
+          backgroundColor: "hsl(var(--background))",
           clipPath: "polygon(0 30%, 100% 100%, 100% 100%, 0 100%)",
+          bottom: "-1px",
         }}
       />
       

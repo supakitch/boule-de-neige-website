@@ -5,7 +5,7 @@ import { Target, GraduationCap } from "lucide-react";
 
 export const OffresSection = () => {
   return (
-    <section className="py-20 bg-[#FFF6EB]" id="offres">
+    <section className="py-20 bg-background" id="offres">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
