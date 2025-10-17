@@ -19,7 +19,7 @@ const OffresSection = () => {
         {/* Three Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {/* Card 1 - Stratégie et cadrage */}
-          <Card className="bg-muted/30 border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
+          <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-orange mb-2">
@@ -82,7 +82,7 @@ const OffresSection = () => {
           </Card>
 
           {/* Card 2 - Exécution à la carte */}
-          <Card className="bg-muted/30 border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
+          <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-pink mb-2">
@@ -142,7 +142,7 @@ const OffresSection = () => {
           </Card>
 
           {/* Card 3 - Formation & Coaching */}
-          <Card className="bg-muted/30 border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
+          <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-orange mb-2">
