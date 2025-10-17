@@ -97,36 +97,40 @@ const OffresSection = () => {
               <div className="mb-6 flex-1">
                 <p className="text-foreground font-semibold mb-6">Modules possibles :</p>
                 
-                <div className="space-y-5 mb-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="bg-accent-pink/10 p-5 rounded-xl flex flex-col items-start">
+                    <div className="bg-accent-pink/20 p-2.5 rounded-lg mb-3">
                       <Target className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-foreground pt-2">Prospection<br/>multicanale</span>
+                    <span className="text-sm text-foreground font-medium">Prospection<br/>multicanale</span>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
+                  
+                  <div className="bg-accent-pink/10 p-5 rounded-xl flex flex-col items-start">
+                    <div className="bg-accent-pink/20 p-2.5 rounded-lg mb-3">
                       <Phone className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-foreground pt-2">Cold & Warm<br/>Calling</span>
+                    <span className="text-sm text-foreground font-medium">Cold & Warm<br/>Calling</span>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
+                  
+                  <div className="bg-accent-pink/10 p-5 rounded-xl flex flex-col items-start">
+                    <div className="bg-accent-pink/20 p-2.5 rounded-lg mb-3">
                       <Megaphone className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-foreground pt-2">Ads B2B</span>
+                    <span className="text-sm text-foreground font-medium">Ads B2B</span>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
+                  
+                  <div className="bg-accent-pink/10 p-5 rounded-xl flex flex-col items-start">
+                    <div className="bg-accent-pink/20 p-2.5 rounded-lg mb-3">
                       <TrendingUp className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-foreground pt-2">Contenu<br/>LinkedIn</span>
+                    <span className="text-sm text-foreground font-medium">Contenu<br/>LinkedIn</span>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
+                  
+                  <div className="bg-accent-pink/10 p-5 rounded-xl flex flex-col items-start col-span-2">
+                    <div className="bg-accent-pink/20 p-2.5 rounded-lg mb-3">
                       <Users className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-foreground pt-2">Sourcing de<br/>talents</span>
+                    <span className="text-sm text-foreground font-medium">Sourcing de talents</span>
                   </div>
                 </div>
 
