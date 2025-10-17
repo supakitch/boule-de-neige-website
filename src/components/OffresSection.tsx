@@ -1,23 +1,24 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Target, Users, TrendingUp, Megaphone, Code, BookOpen, Mic, Book } from "lucide-react";
+
 const OffresSection = () => {
-  return <section className="py-20 px-1" style={{
-    backgroundColor: "#ffece8"
-  }}>
-      <div className="container mx-auto max-w-[1600px]">
+  return (
+    <section className="py-20 px-4" style={{ backgroundColor: "#ffece8" }}>
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Nos Offres.</h2>
-          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">Que tu découvres la piste ou que tu vises le chrono, on t’accompagne à chaque virage.
-On anticipe les bosses, on dégage les piquets et on garde ton regard fixé sur l’arrivée.</p>
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            On s'adapte à la piste. Que tu sois en plein schuss ou que tu prépares ton premier virage.
+          </p>
         </div>
 
         {/* Three Cards */}
-        <div className="grid md:grid-cols-3 gap-3">
+        <div className="grid md:grid-cols-3 gap-6">
           {/* Card 1 - Stratégie et cadrage */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
-            <CardContent className="py-8 px-5 flex flex-col flex-1">
+            <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-orange mb-2">Stratégie et cadrage</h3>
                 <p className="text-sm text-accent-orange/90 font-medium">15 jours de cadrage</p>
@@ -67,7 +68,7 @@ On anticipe les bosses, on dégage les piquets et on garde ton regard fixé sur 
 
           {/* Card 2 - Exécution à la carte */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
-            <CardContent className="py-8 px-5 flex flex-col flex-1">
+            <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-pink mb-2">Exécution à la carte</h3>
               </div>
@@ -134,7 +135,7 @@ On anticipe les bosses, on dégage les piquets et on garde ton regard fixé sur 
 
           {/* Card 3 - Formation & Coaching */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
-            <CardContent className="py-8 px-5 flex flex-col flex-1">
+            <CardContent className="p-8 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-orange mb-2">Formation & Coaching</h3>
                 <p className="text-sm text-accent-orange/90 font-medium">Formats : 1 à 5 jours</p>
@@ -188,6 +189,8 @@ On anticipe les bosses, on dégage les piquets et on garde ton regard fixé sur 
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export { OffresSection };
