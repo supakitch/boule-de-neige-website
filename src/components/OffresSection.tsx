@@ -15,7 +15,7 @@ const OffresSection = () => {
         </div>
 
         {/* Three Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-3">
           {/* Card 1 - Stratégie et cadrage */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="py-8 px-5 flex flex-col flex-1">
