@@ -4,7 +4,7 @@ import { Check, Phone, Target, Users, TrendingUp, Megaphone, Code, BookOpen, Mic
 
 const OffresSection = () => {
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4" style={{ backgroundColor: "#ffece8" }}>
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
