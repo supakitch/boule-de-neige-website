@@ -35,7 +35,7 @@ export const PhilosophieSection = () => {
                 <div className="text-6xl text-accent-orange font-faustina absolute -bottom-8 right-4 rotate-180">"</div>
               </blockquote>
               
-              <div className="bg-card-secondary p-6 rounded-xl">
+              <div className="bg-card-secondary p-6 rounded-xl mt-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Chez Boule2neige, on ne fait pas que du consulting. On forme, on accompagne, 
                   on transmet. L'objectif ? Que tu sois autonome et que ton équipe maîtrise 
