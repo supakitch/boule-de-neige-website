@@ -1,21 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Target, Users, TrendingUp, Megaphone, Code, BookOpen, Mic, Book } from "lucide-react";
-
 const OffresSection = () => {
-  return (
-    <section className="py-20 px-1 md:px-4" style={{ backgroundColor: "#ffece8" }}>
-      <div className="container mx-auto max-w-none md:max-w-7xl">
+  return <section className="py-20 px-1" style={{
+    backgroundColor: "#ffece8"
+  }}>
+      <div className="container mx-auto max-w-[1600px]">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Nos Offres.</h2>
-          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            On s'adapte à la piste. Que tu sois en plein schuss ou que tu prépares ton premier virage.
-          </p>
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">Que tu découvres la piste ou que tu vises le chrono, on t’accompagne à chaque virage.
+On anticipe les bosses, on dégage les piquets et on garde ton regard fixé sur l’arrivée.</p>
         </div>
 
         {/* Three Cards */}
-        <div className="grid md:grid-cols-3 gap-3 md:gap-6">
+        <div className="grid md:grid-cols-3 gap-3">
           {/* Card 1 - Stratégie et cadrage */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="py-8 px-5 flex flex-col flex-1">
@@ -189,8 +188,6 @@ const OffresSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export { OffresSection };
