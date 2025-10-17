@@ -74,7 +74,7 @@ const OffresSection = () => {
               </div>
 
               <Button 
-                className="w-full bg-accent-orange hover:bg-accent-orange/90 text-accent-orange-foreground rounded-xl py-6 text-base font-semibold"
+                className="w-full bg-accent-orange hover:bg-accent-orange/90 text-white rounded-xl py-6 text-base font-semibold"
               >
                 Planifier un audit gratuit
               </Button>
@@ -139,7 +139,7 @@ const OffresSection = () => {
 
               <div className="mt-auto">
                 <Button 
-                  className="w-full bg-accent-pink hover:bg-accent-pink/90 text-accent-pink-foreground rounded-xl py-6 text-base font-semibold"
+                  className="w-full bg-accent-pink hover:bg-accent-pink/90 text-white rounded-xl py-6 text-base font-semibold"
                 >
                   Discuter de nos modules
                 </Button>
@@ -199,7 +199,7 @@ const OffresSection = () => {
 
               <div className="mt-auto">
                 <Button 
-                  className="w-full bg-accent-orange hover:bg-accent-orange/90 text-accent-orange-foreground rounded-xl py-6 text-base font-semibold"
+                  className="w-full bg-accent-orange hover:bg-accent-orange/90 text-white rounded-xl py-6 text-base font-semibold"
                 >
                   Découvrir la formation
                 </Button>
