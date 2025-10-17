@@ -30,44 +30,44 @@ const OffresSection = () => {
                 </p>
               </div>
 
-              <p className="text-white/90 mb-6 leading-relaxed">
+              <p className="text-foreground/80 mb-6 leading-relaxed">
                 On revoit tout ton cycle de vente, de la prospection au closing. En quinze jours, on remet ton process commercial à niveau. Ensuite, tu choisis les leviers à activer avec nos experts dédiés.
               </p>
 
               <div className="space-y-4 mb-8 flex-1">
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-white/90 text-sm">
+                  <p className="text-foreground/80 text-sm">
                     Audit complet du cycle de vente : prospection, qualification, closing
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-white/90 text-sm">
+                  <p className="text-foreground/80 text-sm">
                     Revue de ton ICP, message et proposition de valeur
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-white/90 text-sm">
+                  <p className="text-foreground/80 text-sm">
                     Analyse des canaux, outils et workflows existants
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-white/90 text-sm">
+                  <p className="text-foreground/80 text-sm">
                     Définition d'une stratégie commerciale multicanale cohérente
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-white/90 text-sm">
+                  <p className="text-foreground/80 text-sm">
                     Ateliers collaboratifs avec ton équipe
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="text-accent-orange mt-1 flex-shrink-0" size={20} />
-                  <p className="text-white/90 text-sm">
+                  <p className="text-foreground/80 text-sm">
                     Recommandations pour améliorer conversion et cadence
                   </p>
                 </div>
@@ -90,48 +90,48 @@ const OffresSection = () => {
                 </h3>
               </div>
 
-              <p className="text-white/90 mb-6 leading-relaxed">
+              <p className="text-foreground/80 mb-6 leading-relaxed">
                 Chaque mission est menée par un expert de son domaine. On assemble pour toi une équipe sur mesure, adaptée à ton niveau de maturité et à tes objectifs.
               </p>
 
               <div className="mb-6 flex-1">
-                <p className="text-white font-semibold mb-6">Modules possibles :</p>
+                <p className="text-foreground font-semibold mb-6">Modules possibles :</p>
                 
                 <div className="space-y-5 mb-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
                       <Target className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-white pt-2">Prospection<br/>multicanale</span>
+                    <span className="text-base text-foreground pt-2">Prospection<br/>multicanale</span>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
                       <Phone className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-white pt-2">Cold & Warm<br/>Calling</span>
+                    <span className="text-base text-foreground pt-2">Cold & Warm<br/>Calling</span>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
                       <Megaphone className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-white pt-2">Ads B2B</span>
+                    <span className="text-base text-foreground pt-2">Ads B2B</span>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
                       <TrendingUp className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-white pt-2">Contenu<br/>LinkedIn</span>
+                    <span className="text-base text-foreground pt-2">Contenu<br/>LinkedIn</span>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="bg-accent-pink/20 p-2.5 rounded-lg flex-shrink-0">
                       <Users className="text-accent-pink" size={24} />
                     </div>
-                    <span className="text-base text-white pt-2">Sourcing de<br/>talents</span>
+                    <span className="text-base text-foreground pt-2">Sourcing de<br/>talents</span>
                   </div>
                 </div>
 
                 <div className="bg-accent-pink/10 border-l-4 border-accent-pink p-4 rounded-r-lg">
-                  <p className="text-sm text-white/80 italic">
+                  <p className="text-sm text-foreground/70 italic">
                     3 mois d'engagement pour chaque module.
                   </p>
                 </div>
@@ -159,39 +159,39 @@ const OffresSection = () => {
                 </p>
               </div>
 
-              <p className="text-white/90 mb-6 leading-relaxed">
+              <p className="text-foreground/80 mb-6 leading-relaxed">
                 Rends ton équipe commerciale autonome et redoutable. On forme et on coache tes équipes pour qu'elles maîtrisent l'art de la prospection, de la relance et du closing moderne.
               </p>
 
               <div className="mb-6">
-                <p className="text-white font-semibold mb-4">Formations disponibles :</p>
+                <p className="text-foreground font-semibold mb-4">Formations disponibles :</p>
                 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <BookOpen className="text-accent-orange mt-1 flex-shrink-0" size={20} />
                     <div>
-                      <p className="font-semibold text-white text-sm">Formation SDR / AE (1-2 jours) :</p>
-                      <p className="text-white/80 text-sm">prospection, relance, cadence, outils.</p>
+                      <p className="font-semibold text-foreground text-sm">Formation SDR / AE (1-2 jours) :</p>
+                      <p className="text-foreground/70 text-sm">prospection, relance, cadence, outils.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Mic className="text-accent-orange mt-1 flex-shrink-0" size={20} />
                     <div>
-                      <p className="font-semibold text-white text-sm">Coaching :</p>
-                      <p className="text-white/80 text-sm">feedback, analyse de calls, structuration du pipe.</p>
+                      <p className="font-semibold text-foreground text-sm">Coaching :</p>
+                      <p className="text-foreground/70 text-sm">feedback, analyse de calls, structuration du pipe.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Book className="text-accent-orange mt-1 flex-shrink-0" size={20} />
                     <div>
-                      <p className="font-semibold text-white text-sm">Playbook personnalisé :</p>
-                      <p className="text-white/80 text-sm">cadences, templates et bonnes pratiques.</p>
+                      <p className="font-semibold text-foreground text-sm">Playbook personnalisé :</p>
+                      <p className="text-foreground/70 text-sm">cadences, templates et bonnes pratiques.</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-accent-orange/10 border-l-4 border-accent-orange p-4 rounded-r-lg mt-6">
-                  <p className="text-sm text-white/80 italic">
+                  <p className="text-sm text-foreground/70 italic">
                     Tous nos formateurs sont des experts terrain, issus de startups B2B performantes.
                   </p>
                 </div>
@@ -210,7 +210,7 @@ const OffresSection = () => {
 
         {/* Bottom Summary */}
         <div className="text-center mt-12 max-w-4xl mx-auto">
-          <p className="text-white/80 text-base leading-relaxed">
+          <p className="text-foreground/70 text-base leading-relaxed">
             <strong>Accompagnement :</strong> on fait avec toi. <strong>Formation :</strong> on t'apprend à le faire. 
             Dans les deux cas, tu travailles avec des experts spécialisés sur chaque sujet.
           </p>
