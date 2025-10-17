@@ -4,8 +4,8 @@ import { Check, Phone, Target, Users, TrendingUp, Megaphone, Code, BookOpen, Mic
 
 const OffresSection = () => {
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#ffece8" }}>
-      <div className="container mx-auto max-w-7xl">
+    <section className="py-20 px-2" style={{ backgroundColor: "#ffece8" }}>
+      <div className="container mx-auto max-w-[1400px]">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Nos Offres.</h2>
@@ -15,7 +15,7 @@ const OffresSection = () => {
         </div>
 
         {/* Three Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-4">
           {/* Card 1 - Stratégie et cadrage */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
             <CardContent className="py-8 px-5 flex flex-col flex-1">
