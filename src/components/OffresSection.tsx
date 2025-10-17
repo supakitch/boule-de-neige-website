@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Target, Users, TrendingUp, Megaphone, Code, BookOpen, Mic, Book } from "lucide-react";
 const OffresSection = () => {
-  return <section className="py-20 px-1" style={{
+  return <section className="py-20" style={{
     backgroundColor: "#ffece8"
   }}>
-      <div className="container mx-auto max-w-[1600px]">
+      <div className="mx-auto max-w-[1600px] px-2 md:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Nos Offres.</h2>
