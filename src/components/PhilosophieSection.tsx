@@ -27,7 +27,7 @@ export const PhilosophieSection = () => {
                 Notre philosophie
               </h2>
               
-              <blockquote className="relative">
+              <blockquote className="relative mb-[50px]">
                 <div className="text-6xl text-accent-orange font-faustina absolute -top-4 -left-2">"</div>
                 <p className="text-2xl md:text-3xl font-faustina italic text-primary leading-relaxed pl-8">
                   Je t'offre pas un igloo, je t'apprends à le construire pour que tu traverses tous les hivers.
