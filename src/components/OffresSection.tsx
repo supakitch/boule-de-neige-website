@@ -202,13 +202,6 @@ const OffresSection = () => {
           </Card>
         </div>
 
-        {/* Bottom Summary */}
-        <div className="text-center mt-12 max-w-4xl mx-auto">
-          <p className="text-foreground/70 text-base leading-relaxed">
-            <strong>Accompagnement :</strong> on fait avec toi. <strong>Formation :</strong> on t'apprend à le faire. 
-            Dans les deux cas, tu travailles avec des experts spécialisés sur chaque sujet.
-          </p>
-        </div>
       </div>
     </section>
   );
