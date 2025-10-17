@@ -18,7 +18,7 @@ const OffresSection = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {/* Card 1 - Stratégie et cadrage */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
-            <CardContent className="p-8 flex flex-col flex-1">
+            <CardContent className="py-8 px-5 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-orange mb-2">Stratégie et cadrage</h3>
                 <p className="text-sm text-accent-orange/90 font-medium">15 jours de cadrage</p>
@@ -68,7 +68,7 @@ const OffresSection = () => {
 
           {/* Card 2 - Exécution à la carte */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
-            <CardContent className="p-8 flex flex-col flex-1">
+            <CardContent className="py-8 px-5 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-pink mb-2">Exécution à la carte</h3>
               </div>
@@ -135,7 +135,7 @@ const OffresSection = () => {
 
           {/* Card 3 - Formation & Coaching */}
           <Card className="bg-white border-none rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col">
-            <CardContent className="p-8 flex flex-col flex-1">
+            <CardContent className="py-8 px-5 flex flex-col flex-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-accent-orange mb-2">Formation & Coaching</h3>
                 <p className="text-sm text-accent-orange/90 font-medium">Formats : 1 à 5 jours</p>
