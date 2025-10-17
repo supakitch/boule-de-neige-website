@@ -63,6 +63,7 @@ export const ProblmeSolutionSection = () => {
         </div>
       </div>
 
+      
       <SnowballAnimation />
     </section>
   );
