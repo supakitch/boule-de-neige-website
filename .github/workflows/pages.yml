@@ -1,0 +1,22 @@
+name: Publie le site sur GitHub Pages (gh-pages)
+
+# Site statique, aucune étape de build : la racine est publiée telle quelle.
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publie sur gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          exclude_assets: '.github,.claude,CLAUDE.md,README.md,deploy.sh'
+          cname: www.boule2neige.com
