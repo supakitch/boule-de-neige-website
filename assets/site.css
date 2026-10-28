@@ -209,23 +209,23 @@ section{position:relative}
 }
 .card h3{font-size:clamp(1.25rem,2vw,1.6rem)}
 .card p{font-size:15px;color:var(--fog);line-height:1.5}
-.card--hero{grid-column:span 7;grid-row:span 2;background:var(--creme)}
+.card--hero{grid-column:span 7;grid-row:span 2;background:var(--aubergine);color:var(--creme);border-color:var(--aubergine)}
+.card--hero p{color:var(--fog-light)}
 .card--b{grid-column:span 5}
 .card--c{grid-column:span 5;background:var(--creme)}
-.card--d{grid-column:span 5;background:var(--aubergine);color:var(--creme);border-color:var(--aubergine)}
-.card--d p{color:var(--fog-light)}
+.card--d{grid-column:span 5;background:var(--creme)}
 .card--e{grid-column:span 7;background:var(--creme)}
 .kicker{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--orange)}
-.card--d .kicker{color:var(--rose)}
+.card--hero .kicker{color:var(--rose)}
 
 .mock{background:var(--creme);border:1.5px solid var(--line);border-radius:4px;padding:12px 14px;font-size:13.5px;line-height:1.5;margin-top:auto}
-.card--c .mock,.card--e .mock,.card--hero .mock{background:var(--blush);border-color:rgba(49,28,57,.14)}
-.card--d .mock{background:rgba(255,246,235,.07);border-color:var(--line-dark);color:var(--creme)}
+.card--c .mock,.card--d .mock,.card--e .mock{background:var(--blush);border-color:rgba(49,28,57,.14)}
+.card--hero .mock{background:rgba(255,246,235,.07);border-color:var(--line-dark);color:var(--creme)}
 .mock__row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 14px;padding:7px 0;border-bottom:1px solid var(--line)}
-.card--d .mock__row{border-bottom-color:var(--line-dark)}
+.card--hero .mock__row{border-bottom-color:var(--line-dark)}
 .mock__row:last-child{border-bottom:0}
 .mock__row span:first-child{color:var(--fog);font-weight:500;flex:none}
-.card--d .mock__row span:first-child{color:var(--fog-light)}
+.card--hero .mock__row span:first-child{color:var(--fog-light)}
 .mock__row span:last-child{text-align:right}
 
 /* ---------- pages ---------- */
@@ -403,7 +403,7 @@ details[open] p{color:var(--fog)}
 /* ---------- responsive ---------- */
 @media (max-width:860px){
   .hero__grid,.proof__grid,.obj__grid,.cta__grid{grid-template-columns:1fr}
-  .hero__art{max-width:380px;margin-inline:auto}
+  .hero__art{width:100%;max-width:380px;margin-inline:auto}
   .badge{left:-12px;top:-10px}
   .grid{gap:12px}
   .card--hero,.card--b,.card--c,.card--d,.card--e{grid-column:span 12;grid-row:auto}
@@ -435,7 +435,7 @@ details[open] p{color:var(--fog)}
   .hero{padding-block:14px 48px}
   .hero h1{line-height:1.07}
   .hero__art{max-width:300px}
-  .badge{width:96px;left:-8px;top:-6px}
+  .badge,.proof .hand-row,.proof .scribble{display:none}
   .btn{display:block;width:100%;text-align:center;padding:15px 18px}
   .note{max-width:100%}
   .hand-row{gap:10px}
