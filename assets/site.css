@@ -249,6 +249,12 @@ section{position:relative}
 .bookhero{padding-block:clamp(24px,3.4vw,54px) clamp(40px,5vw,78px)}
 .bookhero h1{font-size:clamp(1.9rem,4.4vw,3.2rem);line-height:1.05;max-width:16ch;margin-bottom:18px;overflow-wrap:break-word}
 .bookhero .lede{max-width:46ch;margin-bottom:26px}
+.portrait{display:block;width:100%;max-width:230px;aspect-ratio:4/5;object-fit:cover;
+  border:2px solid var(--aubergine);border-radius:8px;box-shadow:6px 6px 0 rgba(255,147,207,.9);
+  background:var(--creme);margin-bottom:6px}
+.portrait--todo{display:grid;place-content:center;text-align:center;padding:20px;
+  font-size:14px;line-height:1.45;color:var(--fog);box-shadow:6px 6px 0 rgba(49,28,57,.14)}
+
 /* ---------- bloc de réservation Cal ID ---------- */
 .book__grid{display:grid;grid-template-columns:.82fr 1.18fr;grid-template-rows:auto 1fr;
   gap:clamp(20px,2.6vw,36px) clamp(24px,3.4vw,50px);align-items:start}
